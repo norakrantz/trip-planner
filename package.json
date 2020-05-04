@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "npm run start-server & npm run build-watch",
     "start-server": "nodemon server/app.js --ignore public",
-    "build-watch": "webpack -w",
+    "build": "webpack -w",
     "start": "npm run start:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,8 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "mapbox-gl": "^0.46.0"
+    "express": "^4.17.1",
+    "mapbox-gl": "^0.46.0",
+    "morgan": "^1.10.0"
   }
 }
